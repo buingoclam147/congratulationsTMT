@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "../node_modules/tds-ui/assets/scss/cdk.scss";
+@import "../node_modules/tds-ui/assets/scss/scroll";
+@import "../node_modules/tds-ui/assets/scss/table.scss";
+@import "../node_modules/tds-ui/assets/scss/carousel.scss";
+@import "../node_modules/tds-ui/assets/scss/input.scss";
+@import "../node_modules/tds-ui/assets/scss/steps.scss";
+@import "../node_modules/tds-ui/assets/scss/radio.scss";
+@import "../node_modules/tds-ui/assets/scss/calendar.scss";

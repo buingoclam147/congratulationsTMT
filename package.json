@@ -11,6 +11,7 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "^14.0.0",
+    "@angular/cdk": "^13.3.9",
     "@angular/common": "^14.0.0",
     "@angular/compiler": "^14.0.0",
     "@angular/core": "^14.0.0",
@@ -18,7 +19,12 @@
     "@angular/platform-browser": "^14.0.0",
     "@angular/platform-browser-dynamic": "^14.0.0",
     "@angular/router": "^14.0.0",
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/typography": "^0.5.7",
+    "animejs": "^3.2.1",
+    "date-fns": "^2.16.1",
     "rxjs": "~7.5.0",
+    "tds-ui": "https://tang-ui.tpos.dev/lib/tds-ui-2.2.0.tgz",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
@@ -27,12 +33,15 @@
     "@angular/cli": "~14.0.3",
     "@angular/compiler-cli": "^14.0.0",
     "@types/jasmine": "~4.0.0",
+    "autoprefixer": "^10.4.11",
     "jasmine-core": "~4.1.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8",
     "typescript": "~4.7.2"
   }
 }

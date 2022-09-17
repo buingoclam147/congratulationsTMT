@@ -1,0 +1,51 @@
+.container-out {
+  background-color: #334;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+section {
+  transform-style: preserve-3d;
+  perspective: 500px;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+section h2 {
+  line-height: 100vh;
+  font-size: 40px;
+  color: white;
+  font-weight: 600;
+  @apply relative w-full h-screen;
+}
+
+.banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.banner .blocks {
+  width: 5vw;
+  height: 5vw;
+  animation: animate 1s ease-in-out forwards;
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(0) translateY(1000px);
+  }
+
+  100% {
+    transform: scale(1) translateY(0);
+    background: url(/assets/people-company.jpg) no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}
