@@ -12,8 +12,8 @@ export class Page2Component implements OnInit, AfterViewInit {
 
   ngOnInit(): void {
     setTimeout(() => {
-      this.router.navigate(['page3']);
-    }, 3500);
+      this.router.navigate(['page1']);
+    }, 3600);
   }
 
   ngAfterViewInit(): void {
