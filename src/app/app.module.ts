@@ -12,6 +12,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { Page1Component } from './page1/page1/page1.component';
 import { Page2Component } from './page1/page2/page2.component';
+import { Page3Component } from './page1/page3/page3.component';
+import { Page4Component } from './page1/page4/page4.component';
+import { Page5Component } from './page1/page5/page5.component';
 // Thiết lập tiếng Việt
 registerLocaleData(localeVi);
 @NgModule({
@@ -19,6 +22,9 @@ registerLocaleData(localeVi);
     AppComponent,
     Page1Component,
     Page2Component,
+    Page3Component,
+    Page4Component,
+    Page5Component,
   ],
   imports: [
     BrowserModule,

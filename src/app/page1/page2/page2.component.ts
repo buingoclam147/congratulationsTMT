@@ -11,15 +11,15 @@ export class Page2Component implements OnInit, AfterViewInit {
   constructor(private router: Router) { }
 
   ngOnInit(): void {
-    // setTimeout(() => {
-    //   this.router.navigate(['page1']);
-    // }, 3000);
+    setTimeout(() => {
+      this.router.navigate(['page3']);
+    }, 3500);
   }
 
   ngAfterViewInit(): void {
 
     var textWrapper = document.querySelector('.ml16');
-    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, `<div class='text-red-600 text-8xl letter relative' style='display:inline-block'>$& <div class="w-2 h-5 bg-white text-white  absolute top-[21px] left-[12.4px]"></div></div>`);
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, `<div class='text-red-600 text-9xl letter relative' style='display:inline-block'>$& <div class="w-3 h-10 bg-[#161b22] text-[#161b22]  absolute top-[16px] left-[15px]"></div></div>`);
 
     anime.timeline({ loop: true })
       .add({
@@ -37,7 +37,7 @@ export class Page2Component implements OnInit, AfterViewInit {
       });
 
     var ml17 = document.querySelector('.ml17');
-    ml17.innerHTML = ml17.innerHTML.replace(/\S/g, `<div class='letter text-8xl text-red-600' style='display:inline-block'>$&</div>`);
+    ml17.innerHTML = ml17.innerHTML.replace(/\S/g, `<div class='letter text-9xl text-red-600' style='display:inline-block'>$&</div>`);
 
     anime.timeline({ loop: true })
       .add({
@@ -55,7 +55,7 @@ export class Page2Component implements OnInit, AfterViewInit {
       });
 
     var ml18 = document.querySelector('.ml18');
-    ml18.innerHTML = ml18.innerHTML.replace(/\S/g, `<div class='letter text-8xl text-red-600' style='display:inline-block'>$&</div>`);
+    ml18.innerHTML = ml18.innerHTML.replace(/\S/g, `<div class='letter text-9xl text-red-600' style='display:inline-block'>$&</div>`);
 
     anime.timeline({ loop: true })
       .add({
@@ -72,37 +72,37 @@ export class Page2Component implements OnInit, AfterViewInit {
         delay: 1000
       });
 
-    var ml11 = document.querySelector('.ml11 .letters');
-    ml11.innerHTML = ml11.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
+    // var ml11 = document.querySelector('.ml11 .letters');
+    // ml11.innerHTML = ml11.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
 
-    anime.timeline({ loop: true })
-      .add({
-        targets: '.ml11 .line',
-        scaleY: [0, 1],
-        opacity: [0.5, 1],
-        easing: "easeOutExpo",
-        duration: 700
-      })
-      .add({
-        targets: '.ml11 .line',
-        translateX: [0, document.querySelector('.ml11 .letters').getBoundingClientRect().width + 10],
-        easing: "easeOutExpo",
-        duration: 700,
-        delay: 100
-      }).add({
-        targets: '.ml11 .letter',
-        opacity: [0, 1],
-        easing: "easeOutExpo",
-        duration: 600,
-        offset: '-=775',
-        delay: (el, i) => 34 * (i + 1)
-      }).add({
-        targets: '.ml11',
-        opacity: 0,
-        duration: 1000,
-        easing: "easeOutExpo",
-        delay: 1000
-      });
+    // anime.timeline({ loop: true })
+    //   .add({
+    //     targets: '.ml11 .line',
+    //     scaleY: [0, 1],
+    //     opacity: [0.5, 1],
+    //     easing: "easeOutExpo",
+    //     duration: 700
+    //   })
+    //   .add({
+    //     targets: '.ml11 .line',
+    //     translateX: [0, document.querySelector('.ml11 .letters').getBoundingClientRect().width + 10],
+    //     easing: "easeOutExpo",
+    //     duration: 700,
+    //     delay: 100
+    //   }).add({
+    //     targets: '.ml11 .letter',
+    //     opacity: [0, 1],
+    //     easing: "easeOutExpo",
+    //     duration: 600,
+    //     offset: '-=775',
+    //     delay: (el, i) => 34 * (i + 1)
+    //   }).add({
+    //     targets: '.ml11',
+    //     opacity: 0,
+    //     duration: 1000,
+    //     easing: "easeOutExpo",
+    //     delay: 1000
+    //   });
   }
 
 
