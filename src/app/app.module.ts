@@ -16,6 +16,7 @@ import { Page3Component } from './page1/page3/page3.component';
 import { Page4Component } from './page1/page4/page4.component';
 import { Page5Component } from './page1/page5/page5.component';
 import { Page6Component } from './page1/page6/page6.component';
+import { Page7Component } from './page1/page7/page7.component';
 // Thiết lập tiếng Việt
 registerLocaleData(localeVi);
 @NgModule({
@@ -27,6 +28,7 @@ registerLocaleData(localeVi);
     Page4Component,
     Page5Component,
     Page6Component,
+    Page7Component,
   ],
   imports: [
     BrowserModule,

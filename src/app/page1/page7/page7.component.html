@@ -1,0 +1,142 @@
+  <div class="bg-[#161b22] relative">
+    <div *ngIf="a">
+      <!-- <button class="font-semibold bg-white rounded-md px-4 py-1 text-red-600 bubbly-button" (click)="routesr()">Tiếp
+        theo</button> -->
+      <div class="container">
+        <div class="center">
+          <button class="btn" (click)="routesr()">
+            <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+              <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+              <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+            </svg>
+            <span class="font-semibold">TIẾP THEO</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+
+    <body>
+      <div class="e-loadholder " *ngIf="hide">
+        <div class="m-loader">
+          <span class="e-text">TMT</span>
+        </div>
+      </div>
+      <div id="particleCanvas-Blue"></div>
+      <div id="particleCanvas-White"></div>
+
+      <p id="note"> <br /> </p>
+      <ul id='timeline' *ngIf="!hide" class="!ml-[30rem]">
+        <li class='entry'>
+          <input checked='checked' class='radio' id='trigger5' name='trigger' type='radio'>
+          <label for='trigger5'>
+            <span>
+              TMT thành lập
+            </span>
+          </label>
+          <span class='date'>Năm 2011</span>
+          <span class='circle'></span>
+          <div class='content'>
+            <h3>Giai đoạn khó khăn</h3>
+            <p>
+              Được đồng thành lập bởi anh Trường, anh Minh và anh Thịnh và Các thành viên đầu tiên của công ty còn rất
+              ít
+            </p>
+            <p>
+              Bắt đầu từ 2011, TMT hoạt động theo hình thức sử dụng công nghệ để giải quyết khó khăn của từng khách
+              hàng. Quy mô kinh doanh và doanh thu hàng năm còn khá hạn chế. Nguồn nhân lực lúc này cũng không quá 20
+              thành viên. Tuy nhiên, nhờ có giai đoạn khó khăn này mà tập thể TMT tích lũy được rất nhiều kinh nghiệm
+              trong lĩnh vực công nghệ, đặc biệt là phát triển phần mềm.
+            </p>
+          </div>
+        </li>
+        <li class='entry'>
+          <input class='radio' id='trigger4' name='trigger' type='radio'>
+          <label for='trigger4'>
+            <span>
+              Giai đoạn Bứt phá
+            </span>
+          </label>
+          <span class='date'>Năm 2018</span>
+          <span class='circle'></span>
+          <div class='content'>
+            <h3>Giai đoạn bứt phá ngoại mục</h3>
+            <p>
+              Trong năm 2018 đã phát triển thành công phần mềm quản lý bán hàng đến tay các khách hàng
+            </p>
+            <p>
+              Đến cuối năm 2018, với tâm nguyện “Kiến tạo thành công” TMT bắt đầu áp dụng những kinh nghiệm trong phát
+              triển
+              đa lĩnh vực phần mềm mang lại giải pháp tối ưu cho nhà bán hàng. Đến nay, TMT có một hệ sinh thái phần mềm
+              đa dạng, giải quyết được hàng ngàn khó khăn của khách hàng.
+            </p>
+          </div>
+        </li>
+        <li class='entry'>
+          <input class='radio' id='trigger3' name='trigger' type='radio'>
+          <label for='trigger3'>
+            <span>
+              Giai đoạn phát triển
+            </span>
+          </label>
+          <span class='date'>Năm 2019</span>
+          <span class='circle'></span>
+          <div class='content'>
+            <h3>Phát triển mạnh mẽ</h3>
+            <p>
+              Năm 2019 là năm mà TMT đã phát triển vô cùng mạnh mẽ trong đa lĩnh vực phần mềm và ngày càng tạo ra nhiều
+              giá trị giúp công ty ngày càng tiến gần tới các công ty công nghệ hàng đầu Việt Nam hơn.
+            </p>
+
+          </div>
+        </li>
+        <li class='entry' (click)="a= true">
+          <input class='radio' id='trigger2' name='trigger' type='radio'>
+          <label for='trigger2'>
+            <span>
+              Giai đoạn bứt phá vượt trội
+            </span>
+          </label>
+          <span class='date'>Năm 2021</span>
+          <span class='circle'></span>
+          <div class='content'>
+            <h3>Giai đoạn bứt phá vượt trội</h3>
+            <p>
+              Năm 2021 đại dịch Covid bùng nổ nhưng không vì đó mà làm các thành viên của TMT chùn bước, mà thay vào đó
+              là một TMT mạnh mẽ chiến thắng đại dịch lẫn công việc được bứt phá một cách vượt trội hơn.
+            </p>
+            <p>
+              TMT đã có rất nhiều sản phẩm công nghệ và được tới 5.000 khách hàng trên toàn quốc tin dùng. Đặc biệt
+              trong năm còn đoạt giải Sao Khuê
+            </p>
+          </div>
+        </li>
+        <li class='entry' (click)="a= true">
+          <input class='radio' id='trigger1' name='trigger' type='radio'>
+          <label for='trigger1'>
+            <span>
+              Hướng đến tương lai
+            </span>
+          </label>
+          <span class='date'>Năm 2025</span>
+          <span class='circle'></span>
+          <div class='content'>
+            <h3>Giai đoạn hướng đến tương lai cho TMT</h3>
+            <p>
+              TMT đặt ra chỉ tiêu đạt được top 3 công ty công nghệ và thương mại điện tử hàng đầu tại Việt Nam càng sớm
+              càng tốt để đảm bảo đủ vững mạnh bơi ra biển lớn vào năm 2025 có thể vương xa ra tầm quốc tế nhằm cạnh
+              tranh và đồng hành để ngày càng phát triển và vươn xa hơn
+            </p>
+            <p>
+              Ngoài ra, TMT còn muốn công nghệ hóa tất cả các hoạt động truyền thống như mua bán, sản xuất, quản lý bằng
+              việc áp dụng
+              các nền tảng công nghệ mới và hiện đại nhất. Nhằm mang chất lượng tốt nhất trong từng sản phẩm phần mềm
+              cho Quý khách hàng, góp phần đưa công nghệ vào cuộc sống hằng ngày cũng như nâng cao chất lượng, hiệu quả
+              sản xuất, kinh doanh.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </body>
+  </div>

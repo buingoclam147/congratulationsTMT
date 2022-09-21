@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import anime from 'animejs/lib/anime.es.js';
 @Component({
   selector: 'app-page4',
@@ -7,10 +8,12 @@ import anime from 'animejs/lib/anime.es.js';
 })
 export class Page4Component implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
-
+    setTimeout(() => {
+      this.router.navigate(['page5']);
+    }, 5100);
     // var textWrapper = document.querySelector('.ml16');
     // textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, `<div class='text-red-600 text-9xl letter relative' style='display:inline-block'>$& <div class="w-3 h-10 bg-[#161b22] text-[#161b22]  absolute top-[16px] left-[15px]"></div></div>`);
     var ml4 = { opacityIn: [], scaleIn: [], scaleOut: 0, durationIn: 0, durationOut: 0, delay: 0 }

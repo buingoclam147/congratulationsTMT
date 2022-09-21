@@ -23,6 +23,8 @@
     "@tailwindcss/typography": "^0.5.7",
     "animejs": "^3.2.1",
     "date-fns": "^2.16.1",
+    "ng-particles": "^3.3.1",
+    "particlesjs": "^2.2.3",
     "rxjs": "~7.5.0",
     "tds-ui": "https://tang-ui.tpos.dev/lib/tds-ui-2.2.0.tgz",
     "tslib": "^2.3.0",

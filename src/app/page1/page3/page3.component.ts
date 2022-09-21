@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import anime from 'animejs/lib/anime.es.js';
 @Component({
   selector: 'app-page3',
@@ -7,11 +8,9 @@ import anime from 'animejs/lib/anime.es.js';
 })
 export class Page3Component implements OnInit, AfterViewInit {
   blockParent = false;
-  constructor() { }
+  nextPage = 0;
+  constructor(private router: Router) { }
   ngAfterViewInit(): void {
-
-
-
     var curpage = 1;
     var sliding = false;
     var click = true;
@@ -188,5 +187,10 @@ export class Page3Component implements OnInit, AfterViewInit {
     //   this.blockParent = true
     // }, 3500);
   }
-
+  add() {
+    this.nextPage = this.nextPage + 1;
+    if (this.nextPage === 4) {
+      this.router.navigate(['page7']);
+    }
+  }
 }
