@@ -19,7 +19,7 @@ export class Page2Component implements OnInit, AfterViewInit {
   ngAfterViewInit(): void {
 
     var textWrapper = document.querySelector('.ml16');
-    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, `<div class='text-red-600 text-9xl letter relative' style='display:inline-block'>$& <div class="w-3 h-10 bg-[#161b22] text-[#161b22]  absolute top-[16px] left-[15px]"></div></div>`);
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, `<div class='text-red-600 text-9xl letter relative' style='display:inline-block'>$& <div class="w-[10px] h-10 bg-[#161b22] text-[#161b22]  absolute top-[16px] left-[17.5px]"></div></div>`);
 
     anime.timeline({ loop: true })
       .add({

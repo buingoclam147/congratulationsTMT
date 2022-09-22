@@ -3,9 +3,9 @@ $slide: "slide";
 $images: (
   "/assets/6ca882d19c0c5852011d.jpg",
   "/assets/79a8e62ba9fc6da234ed.jpg",
-  "/assets/4fb3b40cc5db018558ca.jpg",
   "/assets/76383c7a4ead8af3d3bc.jpg",
-  "/assets/5aff01071fdadb8482cb.jpg"
+  "/assets/5aff01071fdadb8482cb.jpg",
+  "/assets/4fb3b40cc5db018558ca.jpg"
 );
 $width: 90%;
 $height: 90%;
@@ -148,7 +148,8 @@ circle {
 .slide1,
 .slide2,
 .slide3,
-.slide4 {
+.slide4,
+.slide5 {
   position: absolute;
   background-position: center;
   background-size: cover;
@@ -176,7 +177,7 @@ circle {
       opacity: 1;
       margin-top: 0 !important;
       transition-delay: 1000ms;
-      transition: all 1500ms ease;
+      transition: all 2000ms ease;
       transform: translate(0px, 0px);
       transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
       transform-origin: 50% 50% 0px;
@@ -184,9 +185,9 @@ circle {
     }
     .show-div {
       opacity: 1;
-      margin-top: 24px !important;
+      margin-top: 20px !important;
       transition-delay: 1000ms;
-      transition: all 1500ms ease;
+      transition: all 2000ms ease;
       transform: translate(0px, 0px);
       transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
       transform-origin: 50% 50% 0px;

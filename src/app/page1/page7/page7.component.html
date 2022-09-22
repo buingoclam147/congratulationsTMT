@@ -2,7 +2,7 @@
     <div *ngIf="a">
       <!-- <button class="font-semibold bg-white rounded-md px-4 py-1 text-red-600 bubbly-button" (click)="routesr()">Tiếp
         theo</button> -->
-      <div class="container">
+      <!-- <div class="container">
         <div class="center">
           <button class="btn" (click)="routesr()">
             <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
@@ -12,8 +12,10 @@
             <span class="font-semibold">TIẾP THEO</span>
           </button>
         </div>
+      </div> -->
+      <div class="container">
+        <button class="glow-on-hover " type="button" (click)="routesr()">TIẾP THEO</button>
       </div>
-
     </div>
 
 
@@ -95,7 +97,7 @@
           <input class='radio' id='trigger2' name='trigger' type='radio'>
           <label for='trigger2'>
             <span>
-              Giai đoạn bứt phá vượt trội
+              Bứt phá vượt trội
             </span>
           </label>
           <span class='date'>Năm 2021</span>
@@ -112,7 +114,7 @@
             </p>
           </div>
         </li>
-        <li class='entry' (click)="a= true">
+        <!-- <li class='entry' (click)="a= true">
           <input class='radio' id='trigger1' name='trigger' type='radio'>
           <label for='trigger1'>
             <span>
@@ -136,7 +138,7 @@
               sản xuất, kinh doanh.
             </p>
           </div>
-        </li>
+        </li> -->
       </ul>
     </body>
   </div>

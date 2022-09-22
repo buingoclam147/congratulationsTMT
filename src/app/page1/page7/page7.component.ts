@@ -242,7 +242,7 @@ export class Page7Component implements OnInit, AfterViewInit {
       this.hide = false
       console.log(1);
 
-    }, 2500);
+    }, 1500);
   }
   routesr() {
     this.router.navigate(['page4']);

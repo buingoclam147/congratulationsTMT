@@ -14,7 +14,7 @@ export class Page1Component implements OnInit, AfterViewInit {
   ngAfterViewInit(): void {
     setTimeout(() => {
       this.router.navigate(['page3']);
-    }, 18000);
+    }, 14200);
     var textWrapper = document.querySelector('.ml1 .letters');
     textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter text-white' style='display:inline-block'>$&</span>");
 
@@ -71,7 +71,7 @@ export class Page1Component implements OnInit, AfterViewInit {
         blocks[i].style.animationDuration = 2 + duration + 's';
       }
       section.classList.add('active')
-    }, 11000);
+    }, 7000);
   }
 
 }

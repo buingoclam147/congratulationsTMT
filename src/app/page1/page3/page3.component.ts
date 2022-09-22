@@ -29,7 +29,7 @@ export class Page3Component implements OnInit, AfterViewInit {
         curpage--;
         svg = true;
         click = false;
-        for (let k = 1; k <= 4; k++) {
+        for (let k = 1; k <= 5; k++) {
           var a1 = document.getElementById(pagePrefix + k);
           a1.className += " tran";
         }
@@ -37,7 +37,7 @@ export class Page3Component implements OnInit, AfterViewInit {
           move();
         }, 200);
         setTimeout(() => {
-          for (let k = 1; k <= 4; k++) {
+          for (let k = 1; k <= 5; k++) {
             var a1 = document.getElementById(pagePrefix + k);
             a1.classList.remove("tran");
           }
@@ -47,13 +47,13 @@ export class Page3Component implements OnInit, AfterViewInit {
 
     function rightSlide() {
       if (click) {
-        if (curpage == 4) curpage = 0;
+        if (curpage == 5) curpage = 0;
         console.log("woek");
         sliding = true;
         curpage++;
         svg = false;
         click = false;
-        for (let k = 1; k <= 4; k++) {
+        for (let k = 1; k <= 5; k++) {
           var a1 = document.getElementById(pagePrefix + k);
           a1.className += " tran";
         }
@@ -61,7 +61,7 @@ export class Page3Component implements OnInit, AfterViewInit {
           move();
         }, 200);
         setTimeout(() => {
-          for (let k = 1; k <= 4; k++) {
+          for (let k = 1; k <= 5; k++) {
             var a1 = document.getElementById(pagePrefix + k);
             a1.classList.remove("tran");
           }
@@ -88,7 +88,7 @@ export class Page3Component implements OnInit, AfterViewInit {
           }
         }
         setTimeout(() => {
-          for (let i = 1; i <= 4; i++) {
+          for (let i = 1; i <= 5; i++) {
             if (i == curpage) {
               var a = document.getElementById(pagePrefix + i);
               a.className += " up1";
@@ -189,7 +189,7 @@ export class Page3Component implements OnInit, AfterViewInit {
   }
   add() {
     this.nextPage = this.nextPage + 1;
-    if (this.nextPage === 4) {
+    if (this.nextPage === 5) {
       this.router.navigate(['page7']);
     }
   }
